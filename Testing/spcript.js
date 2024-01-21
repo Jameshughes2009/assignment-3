@@ -20,9 +20,11 @@ function createPassword(){
   password += number[Math.floor(Math.random() * upperCase.length)];
   password += symbol[Math.floor(Math.random() * upperCase.length)]
   console.log(passwordLength)
+  console.log(allChars)
 
   while(length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
   }
   passwordBox.value = password; 
+  console.log(password)
 }
