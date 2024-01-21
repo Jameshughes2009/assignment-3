@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-const length = 12;
+
 
 // Write password to the #password input
 function generatePassword (){
