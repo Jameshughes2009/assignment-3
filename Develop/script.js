@@ -1,13 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var options = ["A", "B", "c"]
-
 // Write password to the #password input
 function generatePassword (){
-  var passwordLength = prompt("Please Choose Length");
+  var passwordLength = prompt("Please choose a length of at least  8")
   var speicalCharacters = prompt("Do you want to add special characters")
-  var uppercase = prompt("do you want uppercase letters?")
+  var uppercase = prompt("do you want uppercase letters232?")
   console.log (passwordLength)
   console.log (speicalCharacters, uppercase)
 }
