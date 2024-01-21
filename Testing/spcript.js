@@ -14,6 +14,9 @@ const allChars = upperCase + lowerCase + number + symbol;
 
 function createPassword(){
     var passwordLength = prompt("You password will be as least 8 character")
+    var numberRquest = prompt("Do you want numbers inlcuded") 
+    var symbolVersion = prompt("Do you want symbol included?")
+    var upperCase2 = prompt("Do you want capital letter?")
   let password = "";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
   password += lowerCase[Math.floor(Math.random() * upperCase.length)];
@@ -21,6 +24,8 @@ function createPassword(){
   password += symbol[Math.floor(Math.random() * upperCase.length)]
   console.log(passwordLength)
   console.log(allChars)
+  console.log(numberRquest)
+  console.log(symbolVersion)
 
   while(length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
@@ -28,3 +33,4 @@ function createPassword(){
   passwordBox.value = password; 
   console.log(password)
 }
+console.log("James Hughes Assignment 3")
